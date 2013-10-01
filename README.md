@@ -1,4 +1,4 @@
-# Puppet tmpreaper/tmpwatch module
+# Puppet tmpreaper (tmpwatch) module
 
 This module installs tmpreaper or tmpwatch.
 
