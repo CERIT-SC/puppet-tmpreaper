@@ -17,14 +17,18 @@ Required modules:
 
 Setup client
 
-    include tmpreaper
+```puppet
+include tmpreaper
+```
 
 Full configuration options:
 
-    class { 'tmpreaper':
-      enabled       => false|true,            # enable service
-      packages      => [...],                 # list of packages to install
-    }
+```puppet
+class { 'tmpreaper':
+  enabled  => false|true,     # enable service
+  packages => [...],          # list of packages to install
+}
+```
 
 ***
 

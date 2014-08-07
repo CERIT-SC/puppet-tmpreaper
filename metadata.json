@@ -1,0 +1,50 @@
+{
+  "name": "ceritsc-tmpreaper",
+  "version": "0.9.0",
+  "author": "ceritsc",
+  "summary": "Tmpreaper (tmpwatch) module",
+  "license": "MIT",
+  "source": "https://github.com/CERIT-SC/puppet-tmpreaper.git",
+  "project_page": "https://github.com/CERIT-SC/puppet-tmpreaper",
+  "issues_url": "https://github.com/CERIT-SC/puppet-tmpreaper/issues",
+  "tags": [
+    "tmpreaper",
+    "tmpwatch"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "CentOS"
+    },
+    {
+      "operatingsystem": "Scientific"
+    },
+    {
+      "operatingsystem": "OracleLinux"
+    },
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.3"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 4.0.0"
+    }
+  ]
+}
