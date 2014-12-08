@@ -1,6 +1,6 @@
 {
   "name": "ceritsc-tmpreaper",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "author": "ceritsc",
   "summary": "Tmpreaper (tmpwatch) module",
   "license": "MIT",
@@ -42,9 +42,6 @@
     }
   ],
   "dependencies": [
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.0.0"
-    }
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.0.0"}
   ]
 }
