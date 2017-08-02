@@ -25,8 +25,10 @@ Full configuration options:
 
 ```puppet
 class { 'tmpreaper':
-  enabled  => false|true,     # enable service
-  packages => [...],          # list of packages to install
+  enabled       => false|true,     # enable service
+  tmptime       => 7               # only delete files that haven't been accessed longer than $tmptime
+  protect_extra => [],             # list of file patterns to protect (e.g. /tmp/tmux-*)
+  packages      => [...],          # list of packages to install
 }
 ```
 
