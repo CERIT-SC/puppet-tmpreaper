@@ -1,5 +1,6 @@
 class tmpreaper::params {
   $enabled = true
+  $tmptime = 7
 
   case $::osfamily {
     debian: {

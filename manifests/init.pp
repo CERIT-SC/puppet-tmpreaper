@@ -1,10 +1,14 @@
 class tmpreaper (
-  $enabled  = $tmpreaper::params::enabled,
-  $packages = $tmpreaper::params::packages,
+  $enabled       = $tmpreaper::params::enabled,
+  $packages      = $tmpreaper::params::packages,
+  $tmptime         = $tmpreaper::params::tmptime,
+  $protect_extra = [],
 ) inherits tmpreaper::params {
 
   validate_bool($enabled)
   validate_array($packages)
+  validate_array($protect_extra)
+  validate_integer($tmptime, 365, -1)
 
   class { 'tmpreaper::install':
     enabled  => $enabled,
@@ -12,7 +16,9 @@ class tmpreaper (
   }
 
   class { 'tmpreaper::config':
-    enabled => $enabled,
+    enabled       => $enabled,
+    tmptime         => $tmptime,
+    protect_extra => $protect_extra,
   }
 
   if $enabled {

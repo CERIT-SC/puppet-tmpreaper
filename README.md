@@ -6,7 +6,7 @@ This module installs tmpreaper or tmpwatch.
 
 Module has been tested on:
 
-* Puppet 3.3
+* Puppet 3.3, 3.7.x, 3.8.x
 * Debian and Red Hat family systems
 
 Required modules:
@@ -33,3 +33,4 @@ class { 'tmpreaper':
 ***
 
 CERIT Scientific Cloud, <support@cerit-sc.cz>
+TenTwentyFour S.à r.l., <puppet@tentwentyfour.lu>
