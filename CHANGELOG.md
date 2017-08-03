@@ -1,3 +1,7 @@
+## 2017-08-02 - Release 0.10.0
+
+Added configuration options for TMPREAPER_PROTECT_EXTRA configuration setting.
+
 ## 2014-12-08 - Release 0.9.2
 
 Fix file/directory permissions.
