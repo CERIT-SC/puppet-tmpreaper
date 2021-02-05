@@ -1,6 +1,7 @@
 class tmpreaper (
   $enabled  = $tmpreaper::params::enabled,
   $packages = $tmpreaper::params::packages,
+  $version  = $tmpreaper::params::version,
 ) inherits tmpreaper::params {
 
   validate_bool($enabled)

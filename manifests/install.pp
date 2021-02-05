@@ -1,9 +1,11 @@
 class tmpreaper::install (
   $enabled,
-  $packages
+  $packages,
+  $version
 ) {
   $_ensure = $enabled ? {
-    true  => present,
+    true  => $version,
+
     false => absent
   }
 

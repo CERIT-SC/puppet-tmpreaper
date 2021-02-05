@@ -14,4 +14,6 @@ class tmpreaper::params {
       fail("Unsupported OS family: ${::osfamily}")
     }
   }
+
+  $version = 'present'
 }
