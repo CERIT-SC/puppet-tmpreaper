@@ -10,6 +10,7 @@ class tmpreaper (
   class { 'tmpreaper::install':
     enabled  => $enabled,
     packages => $packages,
+    version => $version,
   }
 
   class { 'tmpreaper::config':
